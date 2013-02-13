@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:id="@id/view_doctor_operation_tab_layout" android:background="@drawable/bg_doctor_operation_tab" android:paddingLeft="8.0dip" android:paddingTop="5.0dip" android:paddingRight="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/view_doctor_operation_tab_btn_route" android:background="@drawable/bg_btn_doctor_opeartion_tab_selector" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="18.0sp" android:textColor="@color/button_green" android:gravity="center" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/look_route" android:drawableLeft="@drawable/ic_doctor_operation_route" android:drawablePadding="3.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/view_doctor_operation_btn_register" android:background="@drawable/bg_btn_doctor_opeartion_tab_selector" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="18.0sp" android:textColor="@color/button_green" android:gravity="center" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_register" android:drawableLeft="@drawable/ic_doctor_operation_register" android:drawablePadding="3.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/view_doctor_operation_btn_call" android:background="@drawable/bg_btn_doctor_opeartion_tab_selector" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="18.0sp" android:textColor="@color/button_green" android:gravity="center" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/phone_consult" android:drawableLeft="@drawable/ic_doctor_operation_call" android:drawablePadding="3.0dip" />
+    </LinearLayout>
+</LinearLayout>

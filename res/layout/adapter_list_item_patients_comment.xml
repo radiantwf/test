@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_listview_selector" android:paddingLeft="10.0dip" android:paddingTop="8.0dip" android:paddingRight="10.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/list_item_patients_comment_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RatingBar android:id="@id/list_item_patients_comment_ratingbar" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:progressDrawable="@drawable/ratingbar" android:numStars="5" android:isIndicator="true" style="?android:attr/ratingBarStyleSmall" />
+        <TextView android:textSize="@dimen/text_size_18px" android:textColor="@color/text_color_888888" android:gravity="right" android:id="@id/list_item_patients_comment_tv_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_20px" android:textColor="@color/text_color_888888" android:id="@id/list_item_patients_comment_tv_user" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/list_item_patients_comment_top" />
+    <TextView android:textSize="@dimen/text_size_22px" android:textColor="@color/text_color_333333" android:id="@id/list_item_patients_comment_tv_comment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/list_item_patients_comment_tv_user" />
+</RelativeLayout>

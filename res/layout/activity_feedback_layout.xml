@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/text_color_eef7f2" android:paddingLeft="10.0dip" android:paddingTop="20.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/ic_et_search_frame" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="@dimen/text_size_24px" android:gravity="top" android:id="@id/activity_feedback_layout_et_content" android:background="#00000000" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="请输入您的反馈意见" android:maxLines="10" android:minLines="6" android:maxLength="160" />
+                <TextView android:textSize="@dimen/text_size_24px" android:textColor="@color/text_color_888888" android:layout_gravity="right" android:id="@id/activity_feedback_layout_tv_contentnum" android:background="@drawable/bg_del_num_selecter" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="0/160" />
+                <TextView android:background="@color/text_color_d2d2d2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <EditText android:textSize="@dimen/text_size_24px" android:id="@id/activity_feedback_layout_et_phonenum" android:background="#00000000" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="手机号:  (选填)" android:singleLine="true" android:maxLength="11" android:inputType="number" />
+            </LinearLayout>
+            <Button android:textSize="@dimen/text_size_24px" android:textStyle="bold" android:textColor="@color/white" android:id="@id/activity_feedback_layout_btn_submit" android:background="@drawable/bg_btn_green" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="提交" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

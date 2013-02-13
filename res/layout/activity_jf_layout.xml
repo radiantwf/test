@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/activity_jf_rl_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_24px" android:textColor="@color/text_color_333333" android:id="@id/activity_jf_my_current_dolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="我当前的美圆总额" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="25.0dip" android:textColor="@color/text_color_ff7800" android:gravity="center" android:id="@id/activity_jf_tv_my_alive_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:drawableLeft="@drawable/ic_jf_money" android:layout_below="@id/activity_jf_my_current_dolor" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/activity_jf_iv_sound" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" />
+    <FrameLayout android:id="@id/activity_jf_iv_gift_frame" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="60.0dip" android:layout_marginBottom="300.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/activity_jf_iv_gift_box" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_jf_gift_box_small" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/activity_jf_iv_gift_frame1" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="60.0dip" android:layout_marginBottom="20.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/activity_jf_iv_gift_box1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_jf_gift_box_small" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/dp_twenty_five" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:background="@drawable/bg_dialog_prompt_title" android:padding="@dimen/dp_ten" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_message_flag" />
+        <TextView android:textSize="@dimen/text_size_26px" android:textStyle="bold" android:textColor="@color/white" android:id="@id/dialog_prompt_tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_ten" android:layout_marginRight="@dimen/dp_ninety" android:text="温馨提示" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/text_color_e3f7e7" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/text_size_24px" android:textStyle="bold" android:textColor="@color/text_color_333333" android:gravity="center" android:id="@id/dialog_prompt_tv_msg" android:padding="@dimen/dp_fifteen" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minLines="2" android:layout_weight="1.0" />
+        <TextView android:background="@color/text_color_4fb015" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+            <Button android:textSize="@dimen/text_size_24px" android:textStyle="bold" android:textColor="@color/text_color_333333" android:gravity="center" android:id="@id/dialog_prompt_btn_ok" android:background="@drawable/bg_btn_dialog_prompt_selecter" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="确定" android:layout_weight="1.0" />
+            <TextView android:gravity="center_vertical" android:id="@id/dialog_prompt_tv_line" android:background="@color/text_color_4fb015" android:layout_width="1.0dip" android:layout_height="@dimen/dp_forty_five" />
+            <Button android:textSize="@dimen/text_size_24px" android:textStyle="bold" android:textColor="@color/text_color_333333" android:gravity="center" android:id="@id/dialog_prompt_btn_cancel" android:background="@drawable/bg_btn_dialog_prompt_selecter" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="取消" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

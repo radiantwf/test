@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/text_color_eef7f2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.ts.zys">
+    <com.ts.zys.view.ExtendedListView android:id="@id/activity_mytopic_elv_topicinfo" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" android:cacheColorHint="@color/clear" android:divider="@color/text_color_d2d2d2" android:dividerHeight="1.0px" miles:scrollBarPanel="@layout/clock" miles:scrollBarPanelInAnimation="@anim/in" miles:scrollBarPanelOutAnimation="@anim/out"
+      xmlns:miles="http://schemas.android.com/apk/res/com.ts.zys" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/activity_mytopic_fl_clock" android:layout_width="110.0dip" android:layout_height="34.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="10.0px" android:layout_alignParentRight="true" layout="@layout/clock" />
+    </RelativeLayout>
+</RelativeLayout>

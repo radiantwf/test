@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/text_color_eef7f2" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_22px" android:textColor="@color/default_text_color" android:id="@id/activity_office_info_tv_name_content" android:background="@color/white" android:padding="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/text_line_spacing" />
+        <TextView android:background="@color/text_color_d2d2d2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <TextView android:textSize="@dimen/text_size_22px" android:textStyle="bold" android:textColor="@color/default_text_color" android:id="@id/activity_office_info_tv_intro_title" android:background="@drawable/ic_group_title_press" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="科室简介" />
+        <TextView android:textSize="@dimen/text_size_22px" android:textColor="@color/default_text_color" android:id="@id/activity_office_info_tv_intro_content" android:background="@drawable/ic_child_group_title_press" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:lineSpacingExtra="@dimen/text_line_spacing" />
+    </LinearLayout>
+</ScrollView>

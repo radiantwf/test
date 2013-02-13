@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@drawable/bg_listview_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_24px" android:textStyle="bold" android:textColor="@color/text_color_333333" android:ellipsize="end" android:id="@id/adapter_search_record_tv_content" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+    <ImageView android:id="@id/adapter_search_record_iv_del" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_btn_search_del_selecter" android:layout_weight="0.0" />
+</LinearLayout>

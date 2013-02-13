@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_im_doctor_info_layout" />
+    <include layout="@layout/view_doctor_operation_tab_layout" />
+    <TextView android:textSize="@dimen/text_size_20px" android:textStyle="bold" android:textColor="@color/text_color_875300" android:gravity="center" android:id="@id/my_question_infor_tvYellowHint" android:background="@drawable/bg_prompt_yellow" android:padding="@dimen/dp_five" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="黄条提示" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ListView android:id="@id/my_question_infor_lvItems" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#ff000000" android:dividerHeight="0.0dip" />
+        <RelativeLayout android:id="@id/activity_chat_vg_thanks_doctor" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_five" android:layout_marginBottom="@dimen/dp_ten" android:layout_alignParentBottom="true">
+            <Button android:id="@id/activity_chat_btn_thanks_doctor" android:background="@drawable/bg_btn_thanks_doctor_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/my_question_infor_rlShowSelectImage" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="@dimen/dp_twenty" android:layout_marginRight="@dimen/dp_twenty" android:layout_marginBottom="@dimen/dp_ten" android:layout_above="@id/my_question_infor_rlBottomLayout">
+        <ImageView android:id="@id/my_question_infor_ivAddImages" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="@dimen/dp_ten" android:layout_marginRight="@dimen/dp_ten" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/my_question_infor_ivDel" android:background="@drawable/ic_del" android:visibility="gone" android:layout_width="@dimen/dp_twenty" android:layout_height="@dimen/dp_twenty" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/my_question_infor_rlBottomLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/my_question_infor_llReplay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:background="@drawable/ic_findhealth_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/my_question_infor_ivSpeech" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_my_question_infor_speech" android:layout_weight="0.0" />
+                <ImageView android:id="@id/my_question_infor_ivImages" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_my_question_infor_sadd_image" android:layout_weight="0.0" />
+                <EditText android:id="@id/my_question_infor_etReplyBox" android:background="@drawable/ic_my_question_infor_reply_box" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_five" android:maxLines="3" android:maxLength="500" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/my_question_infor_ivReplyLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_five" android:layout_weight="0.0">
+                    <TextView android:id="@id/my_question_infor_tvNumber" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <ImageView android:id="@id/my_question_infor_ivReply" android:background="@drawable/ic_my_question_infor_reply" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/my_question_infor_llLogin" android:background="@drawable/ic_findhealth_background" android:paddingLeft="@dimen/dp_five" android:paddingRight="@dimen/dp_five" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请登录后继续和医生交流" />
+            <ImageView android:id="@id/my_question_infor_ivLogin" android:background="@drawable/ic_my_question_infor_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_ten" />
+            <ImageView android:id="@id/my_question_infor_ivRegister" android:background="@drawable/ic_my_question_infor_register" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_ten" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

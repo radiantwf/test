@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/bg_search_layout" android:padding="@dimen/dp_twenty" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/share_sina_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sina_share" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/share_tencent_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_tencent_share" android:layout_weight="1.0" />
+</LinearLayout>

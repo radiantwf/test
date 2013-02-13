@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ts.zys.view.WaderRefreshListView android:id="@id/activity_circle_list_layout_lv" android:background="@color/bg_blue_eff6fa" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@color/text_color_d2d2d2" android:dividerHeight="1.0px" android:fastScrollEnabled="true" style="@style/listviewStyle" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/activity_circle_list_layout_liner" android:background="@color/bg_color_f8eef9" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/activity_circle_list_layout_iv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_emotion_introduce" />
+            <TextView android:textSize="@dimen/text_size_24px" android:textColor="@color/text_color_333333" android:layout_gravity="center_horizontal" android:id="@id/activity_circle_list_layout_prompt_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_ten" android:layout_marginTop="@dimen/dp_twenty" android:layout_marginRight="@dimen/dp_ten" android:layout_marginBottom="@dimen/dp_fifteen" />
+            <TextView android:textSize="@dimen/text_size_18px" android:textColor="@color/text_color_888888" android:layout_gravity="center_horizontal" android:id="@id/activity_circle_list_layout_people_num_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_ten" android:layout_marginRight="@dimen/dp_ten" android:layout_marginBottom="@dimen/dp_fifteen" />
+            <Button android:textSize="@dimen/text_size_24px" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/activity_circle_list_layout_btn" android:background="@drawable/bg_btn_circle_unopen_selecter" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_twenty" android:text="定时参与" android:shadowColor="@*android:color/black" android:shadowDy="0.5" android:shadowRadius="1.0" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

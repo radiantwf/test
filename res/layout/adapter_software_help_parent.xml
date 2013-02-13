@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_listview_selector" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="top|left|center" android:id="@id/adapter_software_help_parent_tv_Q" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Q :" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/black" android:ellipsize="end" android:id="@id/adapter_software_help_parent_tv_title_collapsed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/adapter_software_help_parent_tv_Q" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/adapter_software_help_parent_tv_title_expanded" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/adapter_software_help_parent_tv_Q" android:lineSpacingExtra="4.0dip" />
+</RelativeLayout>

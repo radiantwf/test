@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/activity_search_answer_layout_ll_tip" android:background="@drawable/bg_prompt_yellow" android:paddingLeft="@dimen/dp_ten" android:paddingRight="@dimen/dp_ten" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_i" />
+        <TextView android:textSize="@dimen/text_size_20px" android:textStyle="bold" android:textColor="@color/text_color_875300" android:gravity="center" android:id="@id/activity_search_answer_layout_tv_tip" android:padding="@dimen/dp_five" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="相关问题推荐，希望能够帮到您!" />
+    </LinearLayout>
+    <com.ts.zys.view.WaderListView android:id="@id/activity_search_answer_layout_lv_answer" android:visibility="gone" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@color/text_color_d2d2d2" android:dividerHeight="0.5dip" android:fastScrollEnabled="true" style="@style/listviewStyle" />
+    <include layout="@layout/view_guide_empty_search_answer_layout" />
+</LinearLayout>

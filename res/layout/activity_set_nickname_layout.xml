@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/dp_ten" android:paddingRight="@dimen/dp_ten" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="@dimen/text_size_24px" android:textColor="@color/text_color_333333" android:textColorHint="@color/text_color_888888" android:id="@id/activity_set_nickname_content_edt" android:background="@drawable/ic_edittext_background" android:padding="@dimen/dp_ten" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_twenty" android:hint="@string/please_input_nickname" android:singleLine="true" android:maxLength="9" />
+    <ImageView android:id="@id/activity_set_nickname_check_iv" android:padding="@dimen/dp_ten" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_fifteen" android:layout_marginBottom="@dimen/dp_fifteen" android:src="@drawable/ic_setnickname_check" android:layout_below="@id/activity_set_nickname_content_edt" android:layout_alignParentLeft="true" />
+    <Button android:textSize="@dimen/text_size_24px" android:textColor="@color/white" android:gravity="center" android:id="@id/activity_set_nickname_ok_btn" android:background="@drawable/bg_btn_green_more_selecter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ok" android:layout_below="@id/activity_set_nickname_check_iv" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_listview_selecter" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/adapter_mytopic_rl_iconarea" android:layout_width="52.0dip" android:layout_height="65.0dip">
+        <ImageView android:id="@id/adapter_mytopic_iv_icon" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="14.0dip" android:scaleType="fitXY" />
+        <ImageView android:background="@drawable/ic_mytopic_overlay" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="14.0dip" />
+    </RelativeLayout>
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/adapter_mytopic_rl_iconarea" android:layout_alignParentRight="true" layout="@layout/adapter_mytopic_title" />
+</RelativeLayout>

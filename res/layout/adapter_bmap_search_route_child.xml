@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/adapter_bmap_search_route_ll_layout" android:background="@drawable/bg_listview_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/adapter_bmap_search_route_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_five" android:layout_marginRight="@dimen/dp_ten" />
+    <TextView android:textSize="@dimen/text_size_22px" android:textColor="@color/text_color_333333" android:ellipsize="end" android:id="@id/adapter_bmap_search_route_tv_content" android:paddingTop="@dimen/dp_twelve" android:paddingBottom="@dimen/dp_twelve" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+</LinearLayout>

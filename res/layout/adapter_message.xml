@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@drawable/bg_listview_selecter" android:paddingLeft="@dimen/dp_five" android:paddingTop="@dimen/dp_twelve" android:paddingRight="@dimen/dp_ten" android:paddingBottom="@dimen/dp_twelve" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_18px" android:textColor="@color/text_color_888888" android:id="@id/adapter_message_tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10.04" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/adapter_message_tv_time" android:layout_alignParentLeft="true">
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/adapter_messagecenter_cb_seletemesssage" android:background="@null" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_five" android:button="@null" android:drawableLeft="@drawable/bg_myquestion_checkbox" />
+        <TextView android:textSize="@dimen/text_size_24px" android:textColor="@color/text_color_333333" android:layout_gravity="center_vertical" android:id="@id/adapter_message_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_five" android:text="白血病患者在治疗" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

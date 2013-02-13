@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/text_color_eef7f2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/page_title" layout="@layout/view_title_layout" />
+    <RelativeLayout android:id="@id/activity_bmap_search_route_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/page_title">
+        <com.baidu.mapapi.MapView android:id="@id/bmapView" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/text_size_22px" android:textColor="@color/white" android:gravity="center" android:id="@id/activity_bmap_search_route_check" android:background="#aa000000" android:padding="@dimen/dp_ten" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="乘车路线" android:layout_alignParentBottom="true" />
+        <com.ts.zys.view.QQCollapsableListView android:id="@id/activity_bmap_search_route_lv" android:paddingLeft="@dimen/dp_one" android:paddingRight="@dimen/dp_one" android:layout_width="fill_parent" android:layout_height="fill_parent" android:groupIndicator="@null" android:childDivider="@null" android:layout_above="@id/activity_bmap_search_route_check" style="@style/listviewStyle" />
+        <RelativeLayout android:id="@id/activity_bmap_search_route_rl_top" android:background="@drawable/bg_listview_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/activity_bmap_search_route_iv_arrow" android:background="@drawable/ic_up_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_ten" android:layout_marginRight="@dimen/dp_ten" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size_22px" android:textColor="@color/text_color_333333" android:id="@id/activity_bmap_search_route_tv_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="4" android:layout_toLeftOf="@id/activity_bmap_search_route_iv_arrow" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:id="@id/page_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ProgressBar android:id="@id/page_loading_progressbar" android:background="@drawable/bg_loading" android:paddingLeft="40.0dip" android:paddingTop="30.0dip" android:paddingRight="40.0dip" android:paddingBottom="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dip" android:maxHeight="115.0dip" android:indeterminateDrawable="@anim/anim_loading" android:minWidth="100.0dip" android:minHeight="115.0dip" />
+    </LinearLayout>
+    <include android:id="@id/page_net_error" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/activity_net_error_layout" />
+</RelativeLayout>

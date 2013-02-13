@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_listview_selector" android:padding="@dimen/dp_ten" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/adapter_bmap_search_iv_arrow" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_ten" android:src="@drawable/arrow_on" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/text_size_22px" android:textColor="@color/text_color_888888" android:gravity="top" android:id="@id/adapter_bmap_search_plan_tv" android:paddingRight="@dimen/dp_ten" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/adapter_bmap_search_iv_arrow" android:layout_toRightOf="@id/adapter_bmap_search_plan_tv">
+        <TextView android:textSize="@dimen/text_size_22px" android:textColor="@color/text_color_333333" android:id="@id/adapter_bmap_search_tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+        <TextView android:textSize="@dimen/text_size_20px" android:textColor="@color/text_color_888888" android:id="@id/activity_bmap_search_route_distance_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_five" android:maxLines="2" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_16px" android:textColor="@color/text_color_888888" android:gravity="center" android:id="@id/activity_login_icon_iv" android:background="@drawable/ic_qutpatient_information" android:paddingTop="@dimen/dp_ten" android:paddingBottom="@dimen/dp_ten" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/login_prompt" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/activity_login_elselogin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_twenty" android:layout_above="@id/activity_login_icon_iv">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="right" android:id="@id/activity_login_iv_qq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_login_qq" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="left" android:id="@id/activity_login_iv_sina" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_login_sina" android:layout_weight="1.0" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_twenty" android:layout_above="@id/activity_login_elselogin">
+        <TextView android:background="@drawable/bg_login_line_left" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/text_size_20px" android:textColor="@color/text_color_888888" android:padding="@dimen/dp_five" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="第三方账号登录" android:layout_weight="0.0" />
+        <TextView android:background="@drawable/bg_login_line_right" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/dp_ten" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/activity_login_elselogin" android:layout_alignParentTop="true">
+        <EditText android:textSize="@dimen/text_size_24px" android:textColor="@color/text_color_333333" android:textColorHint="@color/text_color_888888" android:id="@id/activity_login_etv_account" android:background="@drawable/ic_edittext_background" android:padding="@dimen/dp_ten" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_ten" android:hint="@string/please_input_account" android:singleLine="true" android:maxLength="72" />
+        <EditText android:textSize="@dimen/text_size_24px" android:textColor="@color/text_color_333333" android:textColorHint="@color/text_color_888888" android:id="@id/activity_login_etv_pwd" android:background="@drawable/ic_edittext_background" android:padding="@dimen/dp_ten" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_ten" android:hint="@string/please_input_pwd" android:singleLine="true" android:maxLength="20" android:inputType="textPassword" />
+        <Button android:textSize="@dimen/text_size_24px" android:textColor="@color/white" android:id="@id/activity_login_btn_login" android:background="@drawable/bg_btn_green_more_selecter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_twenty" android:text="@string/title_login" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_twenty">
+            <CheckBox android:textSize="@dimen/text_size_20px" android:textColor="@color/login_selected" android:layout_gravity="center_vertical" android:id="@id/activity_login_cb_autologin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aut_login" android:layout_weight="1.0" style="@style/CustomCheckBox" />
+            <TextView android:textSize="@dimen/text_size_20px" android:textColor="@color/login_selected" android:gravity="right" android:id="@id/activity_login_tv_forget_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/forget_pwd" android:drawableLeft="@drawable/ic_i_login" android:layout_weight="0.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_gray_e7e7e7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_26px" android:textStyle="bold" android:textColor="@color/text_color_333333" android:gravity="center" android:id="@id/activity_jf_rule_tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+            <TextView android:textSize="@dimen/text_size_20px" android:textColor="@color/text_color_666666" android:id="@id/activity_jf_rule_tv_content" android:padding="@dimen/dp_ten" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_ten" android:layout_marginBottom="@dimen/dp_twenty" android:lineSpacingExtra="6.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:background="@drawable/bg_wave_line" android:layout_width="fill_parent" android:layout_height="@dimen/dp_ten" />
+</LinearLayout>

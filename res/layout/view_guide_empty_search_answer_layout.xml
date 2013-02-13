@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/view_guide_empty_search_answer_layout" android:background="@color/text_color_eef7f2" android:padding="@dimen/dp_twenty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom|center" android:id="@id/view_guide_empty_search_answer_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_search_answer_empty_search" />
+        <TextView android:textSize="30.0sp" android:textColor="#ff707070" android:gravity="center" android:id="@id/view_guide_empty_search_answer_tv_sorry" android:paddingBottom="@dimen/dp_five" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="抱歉！" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/text_size_24px" android:textColor="@color/text_color_888888" android:gravity="center" android:id="@id/view_guide_empty_search_answer_tv_text" android:paddingTop="@dimen/dp_five" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/view_guide_empty_search_answer_iv_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_search_answer_empty_arrow" />
+    </LinearLayout>
+</LinearLayout>

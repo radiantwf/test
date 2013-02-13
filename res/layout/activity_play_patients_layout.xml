@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/ic_patients_comment" android:paddingTop="@dimen/dp_ten" android:paddingBottom="@dimen/dp_ten" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RatingBar android:id="@id/activity_play_patients_rb_star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:stepSize="1.0" style="@style/wmtRatingBarP" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/bleck_register" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="轻按星形来评分" />
+    </LinearLayout>
+    <EditText android:textSize="18.0sp" android:textColor="@color/bleck_register" android:gravity="top" android:id="@id/activity_play_patients_et_patients_comment" android:background="#ffecf6eb" android:paddingLeft="@dimen/dp_twenty" android:paddingTop="@dimen/dp_ten" android:paddingRight="@dimen/dp_twenty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="请对医生的解答作出公正的评价。此处追问不会得到回复，追问请返回咨询界面！（100字内）" android:maxLength="100" />
+</LinearLayout>

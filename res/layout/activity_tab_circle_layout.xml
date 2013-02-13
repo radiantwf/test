@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_gray_e7e7e7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/bg_circle_text" android:paddingTop="@dimen/dp_ten" android:paddingBottom="@dimen/dp_fifteen" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ts.zys.view.WaderScrollLayout android:id="@id/activity_tab_circle_layout_wader_scroll" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="220.0dip" android:layout_marginBottom="10.0dip" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/activity_tab_circle_title_rl" android:background="@drawable/bg_circle_emotion" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignBottom="@id/activity_tab_circle_layout_wader_scroll">
+            <TextView android:textSize="@dimen/text_size_24px" android:textColor="@color/white" android:id="@id/activity_tab_circle_layout_title_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:shadowColor="@*android:color/black" android:shadowDy="0.5" android:shadowRadius="1.0" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ListView android:id="@id/activity_tab_circle_lv" android:background="@color/bg_gray_e7e7e7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@*android:color/transparent" android:cacheColorHint="@*android:color/transparent" android:divider="@drawable/image_divider_line" />
+</LinearLayout>

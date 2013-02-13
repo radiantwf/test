@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_listview_selecter" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/list_item_doctorlist_iv_photo" android:background="@drawable/ic_activity_doctor_list_head" android:padding="5.0dip" android:layout_width="68.0dip" android:layout_height="78.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/list_item_doctorlist_iv_photo">
+        <TextView android:textSize="@dimen/text_size_26px" android:textStyle="bold" android:textColor="@color/text_color_2893ca" android:id="@id/list_item_doctorlist_tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="罗华成" />
+        <TextView android:textSize="@dimen/text_size_22px" android:textColor="@color/text_color_333333" android:id="@id/list_item_doctorlist_tv_class" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="副主任医生" android:layout_toRightOf="@id/list_item_doctorlist_tv_name" android:layout_alignBaseline="@id/list_item_doctorlist_tv_name" />
+        <TextView android:textSize="@dimen/text_size_20px" android:textColor="@color/text_color_333333" android:id="@id/list_item_doctorlist_tv_hospital" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/list_item_doctorlist_tv_name" />
+        <TextView android:textSize="@dimen/text_size_20px" android:textColor="@color/text_color_888888" android:ellipsize="end" android:id="@id/list_item_doctorlist_tv_goodat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/list_item_doctorlist_tv_hospital" />
+    </RelativeLayout>
+</RelativeLayout>

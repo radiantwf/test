@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/view_bottom_reply_layout" android:background="@drawable/bg_circle_topic_detail_comment" android:padding="@dimen/dp_five" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/view_bottom_reply_iv_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_circle_topic_detail_submit_comment_selecter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <EditText android:textSize="@dimen/text_size_20px" android:textColor="@color/text_color_333333" android:textColorHint="@color/text_color_888888" android:id="@id/view_bottom_reply_et_addcontent" android:background="@drawable/bg_circle_topic_detail_add_comment" android:paddingLeft="@dimen/dp_five" android:paddingRight="@dimen/dp_five" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_five" android:hint="@string/add_comment_hint" android:maxLines="3" android:maxLength="500" android:layout_toLeftOf="@id/view_bottom_reply_iv_comment" android:layout_centerVertical="true" />
+</RelativeLayout>

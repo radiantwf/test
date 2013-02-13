@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_comm_ask_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/activity_ask_layout_frame_one" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/activity_ask_layout_iv_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_ask_cloud" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/activity_ask_layout_frame_two" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/activity_ask_layout_iv_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_ask_cloud" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/text_size_22px" android:textColor="@color/text_color_666666" android:ellipsize="end" android:id="@id/activity_ask_layout_help_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_thirty" android:singleLine="true" android:drawableLeft="@drawable/ic_ask_logo" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/activity_ask_layout_llayout" android:layout_below="@id/activity_ask_layout_help_num">
+        <android.support.v4.view.ViewPager android:id="@id/activity_ask_layout_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/activity_ask_earn_dolor" android:layout_width="wrap_content" android:layout_height="300.0dip" android:layout_marginTop="@dimen/dp_twenty" android:layout_marginRight="@dimen/dp_twenty_five" android:src="@drawable/ic_earn_dolor" android:scaleType="fitStart" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/activity_ask_layout_llayout" android:paddingLeft="@dimen/dp_thirty" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

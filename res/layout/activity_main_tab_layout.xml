@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost android:id="@*android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/text_color_eef7f2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@*android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="48.0dip" />
+        <TabWidget android:id="@*android:id/tabs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <RadioGroup android:orientation="horizontal" android:id="@id/activity_main_tab_rg_tabs" android:background="@drawable/bg_img_menu_bg" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true">
+            <RadioButton android:id="@id/activity_main_tab_rb_search" android:background="@drawable/bg_menu_search" android:layout_weight="1.0" style="@style/mainTabRadioButtonStyle" />
+            <RadioButton android:id="@id/activity_main_tab_rb_circle" android:background="@drawable/bg_menu_circle" android:layout_weight="1.0" style="@style/mainTabRadioButtonStyle" />
+            <RadioButton android:id="@id/activity_main_tab_rb_ask" android:background="@drawable/ic_img_menu_circle_normal" android:layout_weight="1.0" style="@style/mainTabRadioButtonStyle" />
+            <RadioButton android:id="@id/activity_main_tab_rb_gotodoctors" android:background="@drawable/bg_menu_gotodoctors" android:layout_weight="1.0" style="@style/mainTabRadioButtonStyle" />
+            <RadioButton android:id="@id/activity_main_tab_rb_personal_center" android:background="@drawable/bg_menu_personal_center" android:layout_weight="1.0" style="@style/mainTabRadioButtonStyle" />
+        </RadioGroup>
+        <ImageView android:id="@id/activity_main_tab_iv_ask" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_menu_ask" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true">
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/activity_main_tab_iv_new_circle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ic_dot" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/activity_main_tab_iv_new_personal_center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ic_dot" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</TabHost>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/adapter_search_disease_ll_layout" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/bleck_register" android:id="@id/adapter_software_help_tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="4.0dip" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/bleck_register" android:gravity="right" android:id="@id/adapter_software_help_tv_time" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+</LinearLayout>

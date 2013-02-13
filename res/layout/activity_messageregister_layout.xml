@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center" android:id="@id/activity_messageregister_lowerprompt_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_twenty" android:layout_marginRight="@dimen/dp_twenty" android:layout_marginBottom="@dimen/dp_twenty" android:layout_alignParentBottom="true" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_above="@id/activity_messageregister_lowerprompt_tv" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/ic_message_register_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_ten">
+                <TextView android:textSize="@dimen/text_size_22px" android:textColor="@color/text_color_333333" android:padding="@dimen/dp_ten" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="编辑短信6-20位数字或字母(区分大小写)为您的密码发送至：" />
+                <Button android:textSize="@dimen/text_size_24px" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/activity_messageregister_sms_address_btn" android:background="@drawable/bg_orange_selecter" android:paddingLeft="@dimen/dp_ten" android:paddingTop="@dimen/dp_five" android:paddingRight="@dimen/dp_ten" android:paddingBottom="@dimen/dp_five" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_twenty" android:layout_marginRight="@dimen/dp_twenty" android:text="号码加载中" android:drawableRight="@drawable/ic_group_indicator_expands" />
+                <TextView android:textSize="@dimen/text_size_22px" android:textColor="@color/yellow_register" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_ten" android:layout_marginTop="@dimen/dp_fifteen" android:layout_marginRight="@dimen/dp_ten" android:layout_marginBottom="@dimen/dp_twenty" android:text="发送完毕即可登录\n登录帐号为发送短信的手机号" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_size_20px" android:textColor="@color/black" android:autoLink="all" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_twenty" android:layout_marginRight="@dimen/dp_twenty" android:layout_marginBottom="@dimen/dp_twenty" android:text="注：\n1、发送注册短信珠海健康云不收取任何费用，您只需支付运营商收取的标准短信费。\n2、手机号仅个人登录，其他用户不可见。\n3、海外用户暂不支持短信注册，若有疑问请发送mail至：app@120.net。" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

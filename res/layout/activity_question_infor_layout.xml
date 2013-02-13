@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_chat" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_im_doctor_info_layout" />
+    <include layout="@layout/view_doctor_operation_tab_layout" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ListView android:id="@id/activity_consult_record_detail_list" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="@*android:color/transparent" android:divider="#00000000" android:dividerHeight="0.0dip" android:fastScrollEnabled="true" />
+        <RelativeLayout android:id="@id/activity_chat_vg_thanks_doctor" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_five" android:layout_marginBottom="@dimen/dp_ten" android:layout_alignParentBottom="true">
+            <Button android:id="@id/activity_chat_btn_thanks_doctor" android:background="@drawable/bg_btn_thanks_doctor_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:id="@id/activity_question_bottom_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/view_bottom_three_button_layout" />
+    </LinearLayout>
+</LinearLayout>

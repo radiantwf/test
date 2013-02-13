@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/view_bottom_layout" android:background="@drawable/ic_view_bottom_layout_background" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_18px" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@id/view_bottom_tv_attention" android:layout_width="60.0dip" android:layout_height="wrap_content" android:text="收藏" android:drawableTop="@drawable/bg_iv_bottom_attention" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/view_layout_bottom_ask" android:background="@drawable/bg_btn_view_bottom_selecter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2.0">
+        <ImageView android:id="@id/view_bottom_iv_ask_styles" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_online_ask" />
+        <TextView android:textSize="@dimen/text_size_22px" android:textColor="@color/white" android:gravity="center" android:id="@id/view_bottom_tv_ask_styles" android:paddingTop="5.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="立即咨询" android:layout_centerHorizontal="true" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_18px" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@id/view_bottom_tv_share" android:layout_width="60.0dip" android:layout_height="wrap_content" android:text="分享" android:drawableTop="@drawable/bg_iv_bottom_share" android:layout_weight="1.0" />
+</LinearLayout>

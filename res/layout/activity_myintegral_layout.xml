@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_color_f6f6f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/bg_integral_wall" android:layout_width="fill_parent" android:layout_height="160.0dip">
+        <TextView android:textSize="@dimen/text_size_20px" android:textStyle="bold" android:textColor="@color/text_color_333333" android:id="@id/activity_myintegral_tv_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:text="我当前美圆总额" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/text_color_ff7800" android:id="@id/activity_myintegral_tv_integral_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_integral_bag" android:drawablePadding="5.0dip" android:layout_below="@id/activity_myintegral_tv_prompt" android:layout_centerHorizontal="true" />
+        <LinearLayout android:background="#fff2eee8" android:layout_width="fill_parent" android:layout_height="26.0dip" android:layout_alignParentBottom="true" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/activity_myintegral_ll_convert" android:background="@drawable/bg_integral_convert_selector" android:paddingTop="6.0dip" android:clickable="true" android:layout_width="100.0dip" android:layout_height="52.0dip" android:layout_marginLeft="35.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/text_color_2f6e00" android:id="@id/activity_myintegral_tv_price" android:layout_width="wrap_content" android:layout_height="20.0dip" android:text="5000" />
+            <TextView android:textColor="@color/text_color_2f6e00" android:gravity="top" android:id="@id/activity_myintegral_tv_convert" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击兑换话费" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/activity_myintegral_ll_sweepstake" android:background="@drawable/bg_integral_sweepstake_selector" android:paddingTop="6.0dip" android:clickable="true" android:layout_width="100.0dip" android:layout_height="52.0dip" android:layout_marginRight="35.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/text_color_804300" android:id="@id/activity_myintegral_tv_price_yao" android:layout_width="wrap_content" android:layout_height="20.0dip" android:text="500" />
+            <TextView android:textColor="@color/text_color_804300" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="摇一摇抽个奖" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ExpandableListView android:id="@id/activity_myintegral_lv_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@*android:color/transparent" android:cacheColorHint="@*android:color/transparent" android:groupIndicator="@null" android:childDivider="@null" style="@style/listviewStyle" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/activity_net_error_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="@drawable/ic_net_unconnect" />
+    <TextView android:textSize="24.0sp" android:textColor="@color/default_text_color" android:layout_gravity="center_horizontal" android:id="@id/activity_net_error_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="医生回复后会马上消息通知您，请注意查收！" />
+    <Button android:id="@id/activity_net_error_btn" android:background="@drawable/bg_btn_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

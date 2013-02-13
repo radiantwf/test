@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/text_color_eef7f2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/activity_doctor_info_doctor_intro_bottom" android:background="@drawable/ic_ask_detail_bottom_btn" android:padding="@dimen/dp_five" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/activity_doctor_info_doctor_intro_bottom_iv_attention" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_iv_bottom_attention" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/activity_doctor_info_doctor_intro_bottom_iv_ask_doctor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_iv_bottom_ask_doctor" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/activity_doctor_info_doctor_intro_bottom_iv_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_iv_bottom_share" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ListView android:scrollbarStyle="outsideOverlay" android:id="@id/activity_doctor_info_doctor_intro_elv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@*android:color/transparent" android:cacheColorHint="@null" android:groupIndicator="@null" android:divider="@*android:color/white" android:layout_above="@id/activity_doctor_info_doctor_intro_bottom" android:fastScrollEnabled="true" />
+</RelativeLayout>

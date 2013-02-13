@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost android:id="@*android:id/tabhost" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_layout_search_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/page_title" layout="@layout/view_title_layout" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/activity_tab_search_rl_panelContent" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingRight="5.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/text_size_26px" android:textColor="@color/text_color_333333" android:id="@id/activity_tab_search_layout_btn_search" android:background="@drawable/bg_btn_tab_gray_search_selecter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0px" android:layout_height="0.0px" />
+            <EditText android:textSize="@dimen/text_size_24px" android:textColor="@color/text_color_333333" android:id="@id/activity_tab_search_layout_et_searchContent" android:background="@drawable/ic_et_search_frame" android:paddingLeft="5.0dip" android:paddingTop="3.0dip" android:paddingRight="20.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:hint="请输入疾病名或问题" android:singleLine="true" android:maxLength="20" android:layout_toLeftOf="@id/activity_tab_search_layout_btn_search" android:layout_centerVertical="true" />
+            <Button android:id="@id/activity_tab_search_layout_btn_clearContent" android:background="@drawable/bg_btn_search_del_selecter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:singleLine="true" android:layout_toLeftOf="@id/activity_tab_search_layout_btn_search" android:layout_centerVertical="true" />
+            <Button android:id="@id/activity_tab_search_layout_btn_speech" android:background="@drawable/bg_btn_search_speech_selecter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_toLeftOf="@id/activity_tab_search_layout_btn_search" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/activity_tab_search_layout_ll_tabs" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/activity_tab_search_rg_tabs" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <RadioButton android:textSize="@dimen/text_size_22px" android:id="@id/activity_tab_search_rb_searchKeyword" android:background="@drawable/bg_tab_top_selecter" android:visibility="gone" android:text="关键字" style="@style/TabRadioButtonStyle" />
+                <RadioButton android:textSize="@dimen/text_size_22px" android:id="@id/activity_tab_search_rb_searchAnswer" android:background="@drawable/bg_tab_top_selecter" android:text="搜答案" android:layout_weight="1.0" style="@style/TabRadioButtonStyle" />
+                <RadioButton android:textSize="@dimen/text_size_22px" android:id="@id/activity_tab_search_rb_searchDisease" android:background="@drawable/bg_tab_top_selecter" android:text="查疾病" android:layout_weight="1.0" style="@style/TabRadioButtonStyle" />
+                <RadioButton android:textSize="@dimen/text_size_22px" android:id="@id/activity_tab_search_rb_searchDoctor" android:background="@drawable/bg_tab_top_selecter" android:text="找医生" android:layout_weight="1.0" style="@style/TabRadioButtonStyle" />
+            </RadioGroup>
+            <FrameLayout android:id="@*android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <ListView android:id="@id/activity_tab_search_lv_record" android:background="@color/text_color_eef7f2" android:visibility="gone" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:cacheColorHint="#00000000" android:divider="@color/text_color_d2d2d2" android:dividerHeight="0.5dip" android:layout_weight="1.0" />
+            <TabWidget android:id="@*android:id/tabs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</TabHost>

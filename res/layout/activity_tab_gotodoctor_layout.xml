@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/text_color_eef7f2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/page_title" layout="@layout/view_title_layout" />
+    <RelativeLayout android:id="@id/activity_tabgotodoctor_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/page_title">
+        <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@id/activity_tabgotodoctor_city_rl" android:background="@drawable/bg_circle_topic_detail_more" android:padding="@dimen/dp_twelve" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_ten">
+            <TextView android:textSize="@dimen/text_size_20px" android:textColor="@color/text_color_2893ca" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/activity_tabgotodoctor_cityname_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_size_20px" android:textColor="@color/text_color_259f41" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/activity_tabgotodoctor_switchcity_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_fifteen" android:text="[切换]" android:singleLine="true" android:layout_toRightOf="@id/activity_tabgotodoctor_cityname_tv" />
+        </RelativeLayout>
+        <com.ts.zys.view.WaderListView android:id="@id/activity_gotodoctor_lv" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@color/text_color_d2d2d2" android:dividerHeight="0.5dip" android:layout_below="@id/activity_tabgotodoctor_city_rl" android:fastScrollEnabled="true" />
+        <com.baidu.mapapi.MapView android:id="@id/bmapView" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.ts.zys.view.WaderListView android:id="@id/activity_gotodoctor_switchhospitallist" android:visibility="gone" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@color/text_color_d2d2d2" android:dividerHeight="0.5dip" android:layout_below="@id/activity_tabgotodoctor_city_rl" android:fastScrollEnabled="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:id="@id/page_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ProgressBar android:id="@id/page_loading_progressbar" android:background="@drawable/bg_loading" android:paddingLeft="40.0dip" android:paddingTop="30.0dip" android:paddingRight="40.0dip" android:paddingBottom="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dip" android:maxHeight="115.0dip" android:indeterminateDrawable="@anim/anim_loading" android:minWidth="100.0dip" android:minHeight="115.0dip" />
+    </LinearLayout>
+    <include android:id="@id/page_net_error" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/activity_net_error_layout" />
+</RelativeLayout>

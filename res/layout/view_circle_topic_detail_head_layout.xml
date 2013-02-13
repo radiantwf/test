@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/dp_ten" android:paddingRight="@dimen/dp_ten" android:paddingBottom="@dimen/dp_ten" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_circle_heart" />
+        <TextView android:textSize="@dimen/text_size_18px" android:textColor="@color/text_color_73c185" android:id="@id/view_circle_topic_detail_tv_love_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_two" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_fourty" android:src="@drawable/ic_circle_comment" />
+        <TextView android:textSize="@dimen/text_size_18px" android:textColor="@color/text_color_73c185" android:id="@id/view_circle_topic_detail_tv_comment_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+        <TextView android:textSize="@dimen/text_size_16px" android:textColor="@color/text_color_888888" android:gravity="right" android:id="@id/view_circle_topic_detail_tv_time" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:id="@id/view_circle_topic_detail_iv_img" android:background="@drawable/ic_img_default_big" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_ten" android:layout_marginBottom="@dimen/dp_ten" android:adjustViewBounds="true" />
+    <TextView android:textSize="@dimen/text_size_22px" android:textColor="@color/text_color_333333" android:id="@id/view_circle_topic_detail_tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/text_line_spacing" />
+    <TextView android:textSize="@dimen/text_size_22px" android:textColor="@color/text_color_333333" android:id="@id/view_circle_topic_detail_tv_reply" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_twenty" android:lineSpacingExtra="@dimen/text_line_spacing" />
+</LinearLayout>

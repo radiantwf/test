@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/dp_ten" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_24px" android:textColor="@color/text_color_333333" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_twenty" android:text="输入邀请码可获取50美圆" />
+    <EditText android:textSize="@dimen/text_size_24px" android:textColor="@color/text_color_333333" android:textColorHint="@color/text_color_888888" android:id="@id/activity_invitation_code_num" android:background="@drawable/ic_edittext_background" android:paddingLeft="@dimen/dp_five" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_twenty" android:hint="请输入邀请码" android:maxLength="20" android:inputType="number" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_thirty">
+        <Button android:textSize="@dimen/text_size_20px" android:textColor="@color/text_color_ffffff" android:gravity="center" android:id="@id/activity_invitation_code_pass" android:background="@drawable/bg_btn_green_more_selecter" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/dp_ten" android:text="无邀请码,跳过" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/text_size_24px" android:textColor="@color/text_color_ffffff" android:gravity="center" android:id="@id/activity_invitation_code_ok" android:background="@drawable/bg_btn_green_more_selecter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_ten" android:text="确定" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

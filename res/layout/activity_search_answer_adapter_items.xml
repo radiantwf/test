@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_listview_selecter" android:paddingTop="@dimen/dp_ten" android:paddingBottom="@dimen/dp_ten" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_24px" android:textColor="@color/text_color_333333" android:ellipsize="end" android:id="@id/activity_search_answer_adapter_items_tv_title" android:paddingLeft="@dimen/dp_ten" android:paddingRight="@dimen/dp_ten" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_five" android:singleLine="true" />
+    <TextView android:textSize="@dimen/text_size_18px" android:textColor="@color/text_color_888888" android:ellipsize="end" android:id="@id/activity_search_answer_adapter_items_tv_content" android:paddingLeft="@dimen/dp_ten" android:paddingRight="@dimen/dp_ten" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:lineSpacingExtra="4.0dip" />
+</LinearLayout>

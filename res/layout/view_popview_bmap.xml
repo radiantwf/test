@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/dp_twenty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_18px" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/popview_name_tv" android:background="@drawable/ic_bmap_pop" android:paddingLeft="@dimen/dp_five" android:paddingRight="@dimen/dp_five" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/popview_layout" android:background="@drawable/ic_bmap_pop" android:paddingLeft="@dimen/dp_five" android:paddingRight="@dimen/dp_five" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/popview_doctor_photo" android:background="@drawable/ic_img_default_doctorphoto_small" android:layout_width="35.0dip" android:layout_height="40.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/text_size_24px" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/popview_doctor_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_ten" android:text="陈龙" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_ten" android:layout_marginRight="@dimen/dp_five" android:src="@drawable/ic_bmap_popview_icon" />
+    </LinearLayout>
+</LinearLayout>

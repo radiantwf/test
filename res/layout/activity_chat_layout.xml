@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_chat" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_title_layout" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/text_color_666666" android:gravity="center" android:id="@id/activity_chat_tv_net_error" android:background="@drawable/bg_prompt_yellow" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/net_error" />
+    <include layout="@layout/view_im_doctor_info_layout" />
+    <include layout="@layout/view_doctor_operation_tab_layout" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_color_9a6417" android:id="@id/activity_chat_tv_offline_hint" android:background="@drawable/bg_doctor_offline" android:padding="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="5.0dip" android:text="@string/doctor_offline_hint" android:drawableLeft="@drawable/ic_i" android:drawablePadding="3.0dip" android:layout_alignParentTop="true" />
+        <ListView android:id="@id/activity_chat_list" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@*android:color/transparent" android:cacheColorHint="#00000000" android:divider="@null" android:layout_below="@id/activity_chat_tv_offline_hint" android:fastScrollEnabled="true" />
+        <Button android:id="@id/activity_chat_btn_thanks_doctor" android:background="@drawable/bg_btn_thanks_doctor_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <include android:id="@id/activity_chat_vg_send_msg" android:visibility="gone" layout="@layout/view_bottom_reply_layout" />
+    <include android:id="@id/activity_chat_vg_loading" android:visibility="gone" layout="@layout/view_im_chat_bottom_loading_layout" />
+</LinearLayout>

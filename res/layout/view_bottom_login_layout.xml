@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/view_bottom_login_layout" android:background="@drawable/bg_circle_topic_detail_comment" android:padding="@dimen/dp_five" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_20px" android:textStyle="bold" android:textColor="@color/text_color_333333" android:gravity="center_vertical" android:id="@id/view_bottom_login_tv_prompt_tologin" android:padding="@dimen/dp_five" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="文明上网，理性评论！" android:layout_weight="1.0" />
+    <ImageView android:id="@id/view_bottom_login_iv_tologin" android:paddingLeft="@dimen/dp_five" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_my_question_infor_login" android:layout_weight="0.0" />
+    <ImageView android:id="@id/view_bottom_login_iv_toRegister" android:paddingLeft="@dimen/dp_five" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_my_question_infor_register" android:layout_weight="0.0" />
+</LinearLayout>

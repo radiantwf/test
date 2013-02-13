@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/dp_ten" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/activity_activate_iv_prompt" android:background="@drawable/ic_user_login_register_alert" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/activity_activate_iv_prompt" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/text_size_22px" android:textColor="@color/text_color_333333" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="我们已经通过手机短信给您发送了验证码，请输入您收到的验证码。" />
+            <EditText android:textSize="@dimen/text_size_24px" android:textColor="@color/text_color_333333" android:id="@id/activity_activate_edt_verificationvcode" android:background="@drawable/ic_edittext_background" android:padding="@dimen/dp_ten" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_ten" android:singleLine="true" android:maxLength="6" android:inputType="number" />
+            <Button android:textSize="@dimen/text_size_24px" android:textColor="@color/white" android:gravity="center" android:id="@id/activity_activate_btn_activate" android:background="@drawable/bg_btn_green_more_selecter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_twenty" android:text="激活帐号" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/ic_forgot_pwd_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_thirty">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/activity_activate_ll_time" android:paddingLeft="@dimen/dp_ten" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_clock_item" />
+                    <TextView android:textSize="@dimen/text_size_22px" android:textColor="@color/yellow_register" android:id="@id/activity_activate_tv_time" android:paddingLeft="@dimen/dp_ten" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="如果您在1分钟内没有收到验证码，请:59秒后点击从新发送" />
+                </LinearLayout>
+                <Button android:textSize="@dimen/text_size_24px" android:textColor="@color/white" android:id="@id/activity_activate_btn_resend" android:background="@drawable/bg_orange_selecter" android:padding="@dimen/dp_five" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_five" android:text="重新发送" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/activity_activate_ll_back" android:background="@drawable/ic_forgot_pwd_phoneing" android:paddingLeft="@dimen/dp_ten" android:paddingTop="@dimen/dp_five" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_phoneregister_black_arrow" />
+                <TextView android:textSize="@dimen/text_size_22px" android:textColor="@color/black" android:paddingLeft="@dimen/dp_ten" android:paddingTop="@dimen/dp_fifteen" android:paddingBottom="@dimen/dp_fifteen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="返回更改手机号码" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

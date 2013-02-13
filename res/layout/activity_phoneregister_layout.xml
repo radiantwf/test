@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/dp_ten" android:paddingRight="@dimen/dp_ten" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <EditText android:textSize="@dimen/text_size_24px" android:textColor="@color/text_color_333333" android:textColorHint="@color/text_color_888888" android:id="@id/phoneregister_phone_edt" android:background="@drawable/ic_edittext_background" android:padding="@dimen/dp_ten" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_twenty" android:hint="@string/phongregister_phone_hint" android:singleLine="true" android:maxLength="11" android:inputType="number" />
+            <EditText android:textSize="@dimen/text_size_24px" android:textColor="@color/text_color_333333" android:textColorHint="@color/text_color_888888" android:ellipsize="end" android:id="@id/phoneregister_pwd_edt" android:background="@drawable/ic_edittext_background" android:padding="@dimen/dp_ten" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_ten" android:hint="@string/phongregister_pwd_hint" android:password="true" android:singleLine="true" android:maxLength="20" android:layout_below="@id/phoneregister_phone_edt" />
+            <Button android:textSize="@dimen/text_size_24px" android:textColor="@color/white" android:id="@id/phoneregister_next_btn" android:background="@drawable/bg_btn_green_more_selecter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_twenty" android:text="下一步" android:layout_below="@id/phoneregister_pwd_edt" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

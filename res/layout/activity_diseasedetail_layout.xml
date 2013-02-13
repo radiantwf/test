@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/activity_diseasedetail_bottom_layout" android:background="@drawable/ic_ask_detail_bottom_btn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include layout="@layout/view_bottom_three_button_layout" />
+    </LinearLayout>
+    <ExpandableListView android:id="@id/activity_diseasedetail_elv" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@*android:color/transparent" android:cacheColorHint="@*android:color/transparent" android:groupIndicator="@null" android:divider="@color/white" android:layout_above="@id/activity_diseasedetail_bottom_layout" />
+</RelativeLayout>

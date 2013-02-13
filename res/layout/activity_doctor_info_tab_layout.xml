@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost android:id="@*android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/text_color_eef7f2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/page_title" layout="@layout/view_title_layout" />
+        <RelativeLayout android:id="@id/doctor_infor_tab_head_layout" android:background="@*android:color/white" android:paddingBottom="@dimen/dp_ten" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/text_color_c56932" android:gravity="center_horizontal" android:id="@id/doctor_infor_tab_satisfaction_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_ten" android:drawableTop="@drawable/ic_doctor_goods_count" android:layout_alignParentRight="true" />
+            <TextView android:textColor="@color/text_color_259f41" android:gravity="center_horizontal" android:id="@id/doctor_infor_tab_ask_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:drawableTop="@drawable/ic_doctor_ask_count" android:layout_toLeftOf="@id/doctor_infor_tab_satisfaction_count" />
+            <ImageView android:id="@id/doctor_info_iv_photo" android:layout_width="50.0dip" android:layout_height="60.0dip" android:layout_marginLeft="@dimen/dp_ten" android:layout_marginTop="@dimen/dp_ten" android:scaleType="fitXY" />
+            <ImageView android:background="@drawable/moment_avatar" android:layout_width="50.0dip" android:layout_height="60.0dip" android:layout_marginLeft="@dimen/dp_ten" android:layout_marginTop="@dimen/dp_ten" />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_ten" android:layout_toRightOf="@id/doctor_info_iv_photo">
+                <com.ts.zys.view.MarqueeButton android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/text_color_333333" android:ellipsize="marquee" android:gravity="left" android:id="@id/doctor_info_tv_name" android:background="#00000000" android:focusable="true" android:focusableInTouchMode="true" android:fadingEdge="none" android:layout_width="150.0dip" android:layout_height="wrap_content" android:maxLines="8" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/text_color_888888" android:id="@id/doctor_info_tv_sex" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/text_color_259f41" android:id="@id/doctor_info_tv_office" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/text_color_259f41" android:id="@id/doctor_info_tv_hospital" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:background="@color/text_color_d2d2d2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <include layout="@layout/view_doctor_operation_tab_layout" />
+        <RadioGroup android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/activity_doctor_info_tab_rg_tabs" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/dp_ten" android:layout_marginTop="@dimen/dp_ten" android:layout_marginRight="@dimen/dp_ten">
+            <RadioButton android:textSize="@dimen/text_size_20px" android:id="@id/activity_doctor_info_tab_rb_doctor_intro" android:background="@drawable/bg_btn_doctor_tab_selecter" android:text="医生简介" android:layout_weight="1.0" style="@style/TabRadioButtonStyle" />
+            <RadioButton android:textSize="@dimen/text_size_20px" android:id="@id/activity_doctor_info_tab_rb_clinic_info" android:background="@drawable/bg_btn_doctor_tab_selecter" android:text="门诊信息" android:layout_weight="1.0" style="@style/TabRadioButtonStyle" />
+            <RadioButton android:textSize="@dimen/text_size_20px" android:id="@id/activity_doctor_info_tab_rb_consult_records" android:background="@drawable/bg_btn_doctor_tab_selecter" android:text="咨询记录" android:layout_weight="1.0" style="@style/TabRadioButtonStyle" />
+            <RadioButton android:textSize="@dimen/text_size_20px" android:id="@id/activity_doctor_info_tab_rb_patients_comment" android:background="@drawable/bg_btn_doctor_tab_selecter" android:text="患者点评" android:layout_weight="1.0" style="@style/TabRadioButtonStyle" />
+        </RadioGroup>
+        <FrameLayout android:id="@*android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TabWidget android:id="@*android:id/tabs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    </LinearLayout>
+</TabHost>

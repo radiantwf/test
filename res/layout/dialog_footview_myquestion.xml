@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/ic_myquestion_footview_drug_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="66.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="48.0dip">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="@drawable/ic_dot_title" />
+        <com.ts.zys.view.MyGallery android:id="@id/myquestion_gly" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:spacing="5.0dip" />
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <ImageView android:id="@id/rotation_flag_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/ic_rotation_flag2" />
+            <ImageView android:id="@id/rotation_flag_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/ic_rotation_flag2" />
+            <ImageView android:id="@id/rotation_flag_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/ic_rotation_flag2" />
+            <ImageView android:id="@id/rotation_flag_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_rotation_flag2" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

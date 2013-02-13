@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_22px" android:textColor="@color/text_color_333333" android:id="@id/adapter_us_dolor_item_title" android:background="@drawable/ic_about_us_dolor_item" android:paddingLeft="@dimen/dp_ten" android:paddingTop="@dimen/dp_five" android:paddingRight="@dimen/dp_ten" android:paddingBottom="@dimen/dp_five" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/text_size_22px" android:textColor="@color/text_color_333333" android:id="@id/adapter_us_dolor_item_cotent" android:background="@color/white" android:paddingLeft="25.0dip" android:paddingTop="@dimen/dp_five" android:paddingRight="@dimen/dp_ten" android:paddingBottom="@dimen/dp_five" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

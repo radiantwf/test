@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_title" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="46.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/title_iv_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="2.0dip" android:src="@drawable/bg_title_back" android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/title_iv_right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:src="@drawable/bg_title_refresh" android:adjustViewBounds="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/title_iv_right" android:layout_toRightOf="@id/title_iv_left" android:layout_centerInParent="true">
+        <TextView android:textSize="20.0sp" android:textColor="@*android:color/white" android:ellipsize="end" android:gravity="center" android:id="@id/title_tv_text" android:paddingLeft="@dimen/dp_five" android:paddingRight="@dimen/dp_five" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="快速问医生" android:singleLine="true" android:shadowColor="@*android:color/black" android:shadowDx="0.5" android:shadowDy="0.5" android:shadowRadius="1.0" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

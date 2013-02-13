@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bg_listview_selecter" android:paddingTop="@dimen/dp_twelve" android:paddingBottom="@dimen/dp_twelve" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_24px" android:textColor="@color/text_color_333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/Hospital_tvName" android:paddingLeft="@dimen/dp_ten" android:paddingRight="@dimen/dp_ten" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+</LinearLayout>
